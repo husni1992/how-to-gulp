@@ -1,16 +1,16 @@
-var gulp = require('gulp'); <br>
-var connect = require('gulp-connect'); // run a local dev server <br>
-var open = require('gulp-open'); // open a URL in a web browser <br>
-var browserify = require('browserify'); // Bundles JS <br>
-var reactify = require('reactify') // Transforms React JSX to JS <br>
-var source = require('vinyl-source-stream'); // use conventional text streams with gulp <br>
-var concat = require('gulp-concat'); // concatenats files <br>
-var lint = require('gulp-eslint'); // lint JS files, including JSX <br>
-var clean = require('gulp-clean'); <br>
-<br>
-var config = { <br>
-    port: 9005, <br>
-    devBaseUrl: 'http://localhost', <br>
+var gulp = require('gulp');
+var connect = require('gulp-connect'); // run a local dev server
+var open = require('gulp-open'); // open a URL in a web browser
+var browserify = require('browserify'); // Bundles JS
+var reactify = require('reactify') // Transforms React JSX to JS
+var source = require('vinyl-source-stream'); // use conventional text streams with gulp 
+var concat = require('gulp-concat'); // concatenats files
+var lint = require('gulp-eslint'); // lint JS files, including JSX
+var clean = require('gulp-clean');
+
+var config = {
+    port: 9005,
+    devBaseUrl: 'http://localhost',
     paths: {
         html: './src/*.html',
         js: './src/**/*.js',
