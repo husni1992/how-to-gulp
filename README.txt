@@ -1,3 +1,8 @@
+Packages need to be installed initially:- npm install --save gulp@3.9.0 gulp-connect@2.2.0 gulp-open@1.0.0
+Packages need to be installed for live reload :- npm install --save browserify@11.0.1 reactify@1.1 vinyl-source-stream@1.1.0
+Bootstrap n etc :-  npm install --save bootstrap@3.3.5 jquery@2.1.4 gulp-concat@2.6.0
+jslint :- npm install --save gulp-eslint@0.15.0
+
 var gulp = require('gulp');
 var connect = require('gulp-connect'); // run a local dev server
 var open = require('gulp-open'); // open a URL in a web browser
