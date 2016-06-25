@@ -1,0 +1,11 @@
+.state('teacherState', {
+            url: '/teacher/:id',
+            templateUrl: 'app/module/teacher/teacher.tmpl.html',
+            controller: 'TeacherController',
+            controllerAs: 'vm',
+            resolve: {
+                myData : function(CourseRepositoryService){
+                    return CourseRepositoryService.getAllCourses();
+                }
+            }
+        })
