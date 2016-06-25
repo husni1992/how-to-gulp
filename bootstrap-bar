@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse">
+        <div class="container-fluids">
+            <span class="navbar-brand">Online Store Management</span>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="studentState">Student</a></li>
+                    <li><a ui-sref="teacherState"><i class="glyphicon glyphicon-plus"></i>Teacher</a></li>
+                    <li><a ui-sref="courseState">Course</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container"><div ui-view></div></div>
